@@ -19,6 +19,7 @@
             android:background="@drawable/long_beijin2"
             >
             <RelativeLayout
+                android:id="@+id/ring"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:layout_marginBottom="80dp"
@@ -38,10 +39,11 @@
 
                     <ImageView
 
+                        android:id="@+id/log"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
 
+                        android:layout_centerInParent="true"
                         app:srcCompat="@drawable/asan">
 
                     </ImageView>
@@ -90,14 +92,24 @@
                 android:id="@+id/start_scan"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:visibility="visible"
                 layout="@layout/start_scan">
             </include>
             <include
                 android:id="@+id/in_scan"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:visibility="invisible"
                 layout="@layout/in_scan">
             </include>
+
+            <include
+            android:id="@+id/complete_scan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                android:visibility="invisible"
+            layout="@layout/complete_scan">
+        </include>
 
         </RelativeLayout>
 
