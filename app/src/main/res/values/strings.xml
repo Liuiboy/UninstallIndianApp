@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">卸载app</string>
+    <string name="title_activity_start_page">卸载app</string>
 </resources>
